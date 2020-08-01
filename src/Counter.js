@@ -60,7 +60,7 @@ class Counter extends Component{
  
         this.setState({
                 stepValue: currentStepValue
-            })
+        })
     }
 
     render(){
@@ -70,7 +70,7 @@ class Counter extends Component{
                 Counter:
                 <Display displayValue={this.state.counterValue}/>
                 <ButtonPanel buttonMethod={this.changeValue}/>
-                <Step addStepMethod={this.changeValue} addStep ={this.addStep}/>
+                <Step addStepMethod={this.changeValue} addStep ={this.addStep} stepValue = {this.state.stepValue}/>
             </div>
         );
     }
